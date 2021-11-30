@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        div{
+            display: inline-block;/*na mesma linha, do lado do outro*/
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 150px;
+            width: 150px;
+        }
+        div:hover{
+            background-color: rgb(161, 161, 168);
+        }
+        div > p { 
+            display:none;/*diz que o paragrafo é filho de div e vai ficar escondido*/
+        }
+        div:hover>p{
+            display: block;/*mostrar o testo escondido pela div quando passar o mouse em cima*/
+            color: white;
+            background-color: red;
+        }
+        div:hover{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div> 
+        passe o mouse aqui
+    <p>texto escondido</p>
+    </div>
+</body>
+</html>
