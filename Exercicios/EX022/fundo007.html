@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+</head>
+<style>
+    #container{
+        position: relative;/* 1 aqui coloca posição relativa*/
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        height: 500px;
+        background-color: purple;
+        padding: 10px;
+    }
+    #conteudo{
+        position:absolute;/* 2 aqui coloca posição absoluta*/
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
+        left: 50%;/* 3 leva ambas a posições para 50%, direta e abaixo*/
+        top: 50%;
+
+        transform: translate(-50%, -50%); /*faz a transformação translate para mexer ma caixa, reduzindo 50% para esquerda 50% para cima, o meio do conteudo centraliza com o contaider*/
+        
+
+
+    }
+</style>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+    
+</body>
+</html>
